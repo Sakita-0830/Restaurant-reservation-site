@@ -1,0 +1,132 @@
+.mypage{
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* 予約情報 */
+.reserve{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0 0 0;
+}
+.reserve_title{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+/* 予約カード */
+.reserve_card{
+  width: 400px;
+  background-color: rgb(0, 100, 255);
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 20px 0;
+}
+/* 予約カードヘッダー */
+.reserve_card_header{
+  display: flex;
+}
+.reserve_card_icon{
+  width: 30px;
+  margin: 10px 0 0 15px;
+}
+.reserve_card_title{
+  margin: 15px 0 0 20px;
+}
+.reserve_card_delete{
+  width: 25px;
+  height: 25px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(0, 100, 255);
+  margin: 20px 0 0 250px;
+}
+/* 予約カード詳細 */
+.reserve_card_info{
+  margin: 20px 0 20px 0;
+}
+.reserve_card_content{
+  display: flex;
+  margin: 5px 0 5px 20px;
+}
+.reserve_card_label{
+  width: 100px;
+}
+.reserve_card_item{
+  width: 250px;
+}
+
+/* お気に入り */
+.favorite{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.mypage_username{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.favorite_title{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+/* お気に入り店舗カード */
+.favorite_card_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0 0 0;
+}
+.favorite_card {
+  width: 200px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+  padding-bottom: 15px;
+  margin: 0 0 20px 0;
+}
+.favorite_card_img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.favorite_card_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+}
+.favorite_card_tag {
+  font-size: 14px;
+  margin: 5px 0 0 10px;
+}
+.favorite_card_submit {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+.favorite_card_flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+.favorite_card_form {
+  display: inline-block;
+}
+.favorite_card_favorite_icon {
+  width: 30px;
+  margin: 0 10px 0 0;
+}

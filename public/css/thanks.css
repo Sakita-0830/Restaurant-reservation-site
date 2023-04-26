@@ -1,0 +1,29 @@
+.thanks{
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 100px auto 0 auto;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+.thanks_text{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 100px 0 0 0;
+}
+.thanks_index{
+  display: block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 30px auto 0 auto;
+
+}

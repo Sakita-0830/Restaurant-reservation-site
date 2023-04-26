@@ -1,0 +1,109 @@
+/* search */
+.search{
+  display: inline-block;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.search_area{
+  width: 120px;
+  border: none;
+  border-right: 1.5px solid rgb(200, 200, 200);
+  font-size: 20px;
+  font-weight: bold;
+}
+.search_genre{
+  width: 120px;
+  border: none;
+  border-right: 1.5px solid rgb(200, 200, 200);
+  font-size: 20px;
+  font-weight: bold;
+}
+.search_word{
+  width: 300px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.magnifying_glass {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: #000;
+}
+.magnifying_glass::before {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 3px solid rgb(200, 200, 200);
+  border-radius: 50%;
+  background-color: #fff;
+  content: "";
+}
+.magnifying_glass::after {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: -1;
+  transform: rotate(-45deg);
+  width: 3px;
+  height: 20px;
+  box-sizing: border-box;
+  background-color: rgb(200, 200, 200);
+  content: "";
+}
+
+/* 店舗card */
+.shop{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.shop_card{
+  width: 200px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+  padding-bottom: 15px;
+  margin: 10px 20px 10px 20px;
+}
+.shop_card_img{
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.shop_card_title{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+}
+.shop_card_tag{
+  font-size: 14px;
+  margin: 5px 0 0 10px;
+}
+.shop_card_submit{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+.shop_card_flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+.shop_card_form {
+  display: inline-block;
+}
+.shop_card_favorite_icon{
+  width: 30px;
+  margin: 0 10px 0 0;
+}
