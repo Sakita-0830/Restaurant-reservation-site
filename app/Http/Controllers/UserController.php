@@ -21,6 +21,7 @@ class UserController extends Controller{
         $reserve = Reservation::where('users_id', '=', $user->id)
         ->orderBy('start_at', 'asc')->get();
         $favorite = Favorite::where('users_id', '=', $user->id)->get();
+        $favorite_shop = null;
 
         if(isset($reserve)){
             for($i = 0; $i < count($reserve); $i++){
@@ -54,17 +55,19 @@ class UserController extends Controller{
             }
         }
 
-        for($i=0; $i < count($favorite_shop); $i++){
-            // エリア名の取得
-            for($n=0; $n < count($areas); $n++){
-                if($favorite_shop[$i]['areas_id'] == $areas[$n]['id']){
-                    $favorite_shop[$i]['area_name'] = $areas[$n]['name'];
+        if(count($favorite) > 0){
+            for($i=0; $i < count($favorite_shop); $i++){
+                // エリア名の取得
+                for($n=0; $n < count($areas); $n++){
+                    if($favorite_shop[$i]['areas_id'] == $areas[$n]['id']){
+                        $favorite_shop[$i]['area_name'] = $areas[$n]['name'];
+                    }
                 }
-            }
-            // ジャンル名の取得
-            foreach($genres as $genre){
-                if($favorite_shop[$i]['genres_id'] == $genre['id']){
-                    $favorite_shop[$i]['genre_name'] = $genre->name;
+                // ジャンル名の取得
+                foreach($genres as $genre){
+                    if($favorite_shop[$i]['genres_id'] == $genre['id']){
+                        $favorite_shop[$i]['genre_name'] = $genre->name;
+                    }
                 }
             }
         }

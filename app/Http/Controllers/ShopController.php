@@ -89,9 +89,9 @@ class ShopController extends Controller{
                 }
             }
             // お気に入りの取得
-            if(isset($favorite)){
+            if(isset($user) && isset($favorite)){
                 for($n=0; $n < count($favorite); $n++){
-                    if($shop_data[$i]['id'] == $favorite[$n]['shops_id']){
+                    if($shop_data[$i]['id'] == $favorite[$n]['shops_id'] && $user->id == $favorite[$n]['users_id']){
                         $shop_data[$i]['favorite'] = $favorite[$n]['id'];
                     }
                 }

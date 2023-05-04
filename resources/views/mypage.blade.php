@@ -53,27 +53,29 @@
     <div class="favorite_title">お気に入り店舗</div>
     <div class="favorite_card_content">
       <!-- お気に入りカード -->
-      @for($i = 0; $i < count($favorite); $i++)
-        <div class="favorite_card">
-          <img src={{$favorite[$i]['img_url']}} class="favorite_card_img">
-          <div class="favorite_card_title">{{$favorite[$i]['shops_name']}}</div>
-          <div class="favorite_card_tag">#{{$favorite[$i]['area_name']}} #{{$favorite[$i]['genre_name']}}</div>
-          <div class="favorite_card_flex">
-            <form action="/detail" class="favorite_card_form">
-            @csrf
-              <input type="text" value={{$favorite[$i]['shops_id']}} class="hidden">
-              <input type="submit" value="詳しくみる" class="favorite_card_submit">
-            </form>
-            @auth
-              <form action="/favorite/delete"  method="post" class="favorite_card_form">
+      @if(isset($favorite))
+        @for($i = 0; $i < count($favorite); $i++)
+          <div class="favorite_card">
+            <img src={{$favorite[$i]['img_url']}} class="favorite_card_img">
+            <div class="favorite_card_title">{{$favorite[$i]['shops_name']}}</div>
+            <div class="favorite_card_tag">#{{$favorite[$i]['area_name']}} #{{$favorite[$i]['genre_name']}}</div>
+            <div class="favorite_card_flex">
+              <form action="/detail" class="favorite_card_form">
               @csrf
-              <input type="text" name="id" value={{$favorite[$i]['id']}} class="hidden">
-                <input type="image" src="{{ asset('/img/icon_heart_red.png') }}" class="favorite_card_favorite_icon">
-                </form>
-            @endauth
+                <input type="text" value={{$favorite[$i]['shops_id']}} class="hidden">
+                <input type="submit" value="詳しくみる" class="favorite_card_submit">
+              </form>
+              @auth
+                <form action="/favorite/delete"  method="post" class="favorite_card_form">
+                @csrf
+                <input type="text" name="id" value={{$favorite[$i]['id']}} class="hidden">
+                  <input type="image" src="{{ asset('/img/icon_heart_red.png') }}" class="favorite_card_favorite_icon">
+                  </form>
+              @endauth
+            </div>
           </div>
-        </div>
-      @endfor
+        @endfor
+      @endif
     </div>
   </div>
 </div>
