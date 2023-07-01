@@ -1,3 +1,51 @@
+# レストラン予約システム
+会員登録、ログイン、会員ごとにお気に入り店舗の登録、飲食店の予約を行うことのできるシステムの作成
+![1QLUVZtLUfDdU72M1hmTDSMT-OiB9ezDLHIEDf1IS](https://user-images.githubusercontent.com/119716881/215355181-25125eff-866f-4294-b99b-2978a92debed.png)
+
+
+## 作成した目的
+模擬案件を通して実践に近い開発経験をつむ
+
+## 機能一覧
+- 例）ログイン機能
+- 会員登録
+- ログイン
+- ログアウト
+- ユーザー情報取得
+- ユーザー飲食店お気に入り一覧取得
+- ユーザー飲食店予約情報取得
+- 飲食店一覧取得
+- 飲食店詳細取得
+- 飲食店お気に入り追加
+- 飲食店お気に入り削除
+- 飲食店予約情報追加
+- 飲食店予約情報削除
+- エリアで検索する
+- ジャンルで検索する
+- 店名で検索する
+
+## 使用技術（実行環境）
+- 例）　Laravel　8.x（言語やフレームワーク、バージョンなどが記載されていると良い）
+- Laravel Framework 8.83.27
+- php
+- html
+- css
+
+## テーブル設計
+< --- 作成したテーブル設計の画像 ---- >
+![image](https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/89519372-c9e6-48c9-96eb-2d157bb87357)
+![image](https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/33d5e42b-9858-4fa7-9dd3-ba6b736d78e3)
+![image](https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/b9d1b5e6-8de2-4ccb-a893-b7a7ae35a53c)
+
+
+## ER図
+< --- 作成したER図の画像 ---- >
+![1yFucqO92IFl87wGaYEFDlld013DDYOqCleDVnUnz](https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/462cb997-18d3-42f1-ba32-1133384ae643)
+
+
+## 他に記載することがあれば記述する
+例） ## 環境構築、## アカウントの種類（テストユーザーなど）
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
