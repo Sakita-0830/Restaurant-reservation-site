@@ -1,6 +1,27 @@
 # レストラン予約システム
 会員登録、ログイン、会員ごとにお気に入り店舗の登録、飲食店の予約を行うことのできるシステムの作成
-![1QLUVZtLUfDdU72M1hmTDSMT-OiB9ezDLHIEDf1IS](https://user-images.githubusercontent.com/119716881/215355181-25125eff-866f-4294-b99b-2978a92debed.png)
+
+### <--- 飲食店一覧ページ --->
+<img width="1437" alt="shop_all" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/84fa53a2-15ae-4746-8c85-107fdae582d7">
+
+### <--- 会員登録ページ --->
+<img width="1437" alt="register" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/66eb3c5b-4de5-4478-b3a1-b36a8ee868bf">
+
+### <--- サンクスページ --->
+<img width="1437" alt="thanks" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/bf83704f-1223-4468-ab38-4eb0908d8869">
+
+### <--- ログインページ --->
+<img width="1437" alt="login" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/034a410f-ad32-4a9c-a18c-65e70459640b">
+
+### <--- マイページ --->
+<img width="1437" alt="my_page" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/9fb1d053-a0fd-4b2a-ba49-e6cc48c570d2">
+
+### <--- 飲食店詳細ページ --->
+<img width="1437" alt="shop_detail" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/364cbaf4-4d98-4df6-82cd-64feefe85318">
+
+### <--- 予約完了ページ --->
+<img width="1437" alt="done" src="https://github.com/Sakita-0830/Restaurant-reservation-site/assets/119716881/d71bc9ce-d755-43ee-806b-1697bcd10e8e">
+
 
 
 ## 作成した目的
